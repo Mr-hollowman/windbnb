@@ -1,8 +1,8 @@
 /* -----room-list---------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
-*{
-  font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
 }
 img {
   width: 100%;
@@ -38,36 +38,36 @@ img {
 .fa-star {
   color: #eb5757;
 }
-.room-title{
+.room-title {
   color: #333333;
   font-weight: 600;
 }
-.view-container{
+.view-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 /* ---------header-view---------- */
-.header-view{
-  max-width: 90%;
+.header-view {
+  width: 100%;
   padding: 20px;
 }
 
 /* ------------navbar---------------- */
-.logo{
-  color: #EB5757;
+.logo {
+  color: #eb5757;
   font-weight: 700;
 }
-.logo-png{
+.logo-png {
   width: 20px;
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
-.search-bar{
+.search-bar {
   width: 350px;
   display: flex;
   justify-content: space-between;
@@ -75,21 +75,29 @@ img {
   /* padding: 15px; */
   border-radius: 15px;
 }
-.search-bar span{
+.search-bar span {
   padding: 10px;
   padding-right: 25px;
-  border-right: 1px solid #F2F2F2
+  border-right: 1px solid #f2f2f2;
 }
-.location{
+.location {
   color: #333333;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
 }
-.add-guest{
-  color: #BDBDBD;
-  font-family: 'Mulish', sans-serif;
+.add-guest {
+  color: #bdbdbd;
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
 }
-.fa-search{
-  color: #EB5757;
+.fa-search {
+  color: #eb5757;
+}
+/* ------single-container----------- */
+.single-container {
+  width: 90%;
+}
+.App{
+  display: flex;
+  justify-content: center;
 }
