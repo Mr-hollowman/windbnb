@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NavBar() {
   return (
-    <div>
+    <div className="navbar">
       <div>
         <img
           className="logo-png"
@@ -11,10 +11,10 @@ export default function NavBar() {
         />
         <span className="logo">windbnb</span>
       </div>
-      <div>
-        <div>Helsinki,Finland</div>
-        <div>Add Guest</div>
-        <i class="fa-solid fa-search" aria-hidden="true"></i>
+      <div className="search-bar">
+        <span className="location">Helsinki,Finland</span>
+        <span className="add-guest">Add Guest</span>
+        <span><i class="fa-solid fa-search" aria-hidden="true"></i></span>
       </div>
     </div>
   );
