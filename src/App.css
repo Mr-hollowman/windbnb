@@ -52,3 +52,12 @@ img {
   max-width: 90%;
   padding: 20px;
 }
+
+/* ------------navbar---------------- */
+.logo{
+  color: #EB5757;
+  font-weight: 700;
+}
+.logo-png{
+  width: 20px;
+}
