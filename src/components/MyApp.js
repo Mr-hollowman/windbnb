@@ -5,7 +5,7 @@ import SingleContainer from "./Single-container";
 export default function MyApp() {
   const { data, isPending, error } = useFetch("http://localhost:3000/Data");
   return (
-    <div>
+    <div className="single-container">
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {data && <SingleContainer roomList={data} />}

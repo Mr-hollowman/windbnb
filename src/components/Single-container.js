@@ -1,12 +1,12 @@
-import React from 'react'
-import NavBar from './NavBar'
-import RoomsView from './RoomsView'
+import React from "react";
+import NavBar from "./NavBar";
+import RoomsView from "./RoomsView";
 
-export default function SingleContainer({roomList}) {
+export default function SingleContainer({ roomList }) {
   return (
     <div>
         <NavBar />
-        <RoomsView roomList={roomList} />        
+        <RoomsView roomList={roomList} />
     </div>
-  )
+  );
 }
