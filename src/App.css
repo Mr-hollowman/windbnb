@@ -46,3 +46,9 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+
+/* ---------header-view---------- */
+.header-view{
+  max-width: 90%;
+  padding: 20px;
+}
