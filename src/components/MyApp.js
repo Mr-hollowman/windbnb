@@ -1,6 +1,6 @@
 import React from "react";
 import useFetch from "./useFetch";
-import RoomsView from "./RoomsView";
+import SingleContainer from "./Single-container";
 
 export default function MyApp() {
   const { data, isPending, error } = useFetch("http://localhost:3000/Data");
@@ -8,7 +8,7 @@ export default function MyApp() {
     <div>
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
-      {data && <RoomsView roomList={data} />}
+      {data && <SingleContainer roomList={data} />}
     </div>
   );
 }
