@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NavBar() {
+export default function NavBar({ setSearchEnlarge, searchEnlarge }) {
   return (
     <div className="navbar">
       <div>
@@ -11,10 +11,35 @@ export default function NavBar() {
         />
         <span className="logo">windbnb</span>
       </div>
-      <div className="search-bar">
-        <span className="location">Helsinki,Finland</span>
-        <span className="add-guest">Add Guest</span>
-        <span><i class="fa-solid fa-search" aria-hidden="true"></i></span>
+      <div
+        className={searchEnlarge ? "enlarged-searchbar" : ""}
+        onClick={() => setSearchEnlarge(true)}
+        onBlur={()=>setSearchEnlarge(false)}
+      >
+        <div className={searchEnlarge ? "super-search" : "search-bar"}>
+          <span
+            className={searchEnlarge ? "enlarged-location span" : "location"}
+          >
+            {searchEnlarge && <span className="up">Location</span>}
+            <span>Helsinki,Finland</span>
+          </span>
+          <span
+            className={searchEnlarge ? "enlarged-addGuest span" : "add-guest"}
+          >
+            {searchEnlarge && <span className="up">Guests</span>}
+            <span>Add Guest</span>
+          </span>
+          <span className={searchEnlarge ? "span span-button" : ""}>
+            {!searchEnlarge && (
+              <i class="fa-solid fa-search" aria-hidden="true"></i>
+            )}
+            {searchEnlarge && (
+              <button className="search-button">
+                <i class="fa-solid fa-search"></i>Search
+              </button>
+            )}
+          </span>
+        </div>
       </div>
     </div>
   );
